@@ -1,8 +1,8 @@
-const listaProductos = () => fetch("https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis").then((respuesta) => respuesta.json());
+const listaProductos = () => fetch("https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis/producto").then((respuesta) => respuesta.json());
 //funcion que comunica con el servidor, recibe la respuesta y genera un json
 
 const crearProducto = (imagen, categoria, nombre, precio) =>{
-    return fetch("https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis", {
+    return fetch("https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis/producto", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -13,16 +13,16 @@ const crearProducto = (imagen, categoria, nombre, precio) =>{
 };
 
 const eliminarProducto = (id) => {
-    return fetch(`https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis/${id}`, {
+    return fetch(`https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis/producto/${id}`, {
     method: "DELETE",
     });
 };
 const detalleProducto = (id) => {
-    return fetch(`https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis/producto/${id}`).then((respuesta) => respuesta.json());
 };
 
 const actualizarProducto = (imagen, categoria, nombre, precio, id) => {
-    return fetch(`https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis/${id}`, {
+    return fetch(`https://my-json-server.typicode.com/Edgar8D/E-Comerce-PETruchis/producto/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
