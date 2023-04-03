@@ -1,0 +1,19 @@
+.logo__contenedor{
+    padding-left: 6em;
+    padding-right: 6em;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(185,218,236);
+    background: linear-gradient(0deg, rgba(185,218,236,1) 18%, rgba(244,206,222,1) 100%);
+
+}
+
+@media screen and (max-width:768px) {
+    .logo__contenedor{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}

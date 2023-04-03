@@ -1,0 +1,41 @@
+.inputs__login{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+.correo__login{
+    width: 26.4375rem;
+    height: 3.945rem;
+    border-radius: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    background: #ebebeb;
+}
+.contrasenha__login{
+    width: 26.4375em;
+    height: 3.945em;
+    border-radius: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 400;
+    background: #ebebeb;
+}
+
+@media screen and (max-width:768px) {
+    .correo__login{
+        width: 17.1875em;
+        height: 2.5625em;
+    }
+    .contrasenha__login{
+        width: 17.1875em;
+        height: 2.5625em;
+    }
+}

@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.desarrollado{
+    text-align: center;
+}
+.texto__footer{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 500;
+}

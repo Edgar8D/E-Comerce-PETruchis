@@ -1,0 +1,130 @@
+{
+  "producto": [
+    {
+      "imagen": "../img/accesorios-1.jpg",
+      "categoria": "accesorios",
+      "nombre": "Correas",
+      "precio": "$ 150.00",
+      "id": "fe1ea5ab-43a9-4f29-b1c9-146b22d13070"
+    },
+    {
+      "imagen": "../img/accesorios-2.jpg",
+      "categoria": "accesorios",
+      "nombre": "Collares Tejidos",
+      "precio": "$ 80.00",
+      "id": "5d515216-c1b8-4e19-a1d6-b7108ea9667c"
+    },
+    {
+      "imagen": "../img/accesorios-3.jpg",
+      "categoria": "accesorios",
+      "nombre": "Pecheras",
+      "precio": "$ 300.00",
+      "id": "6202105a-8e29-41f6-bbe3-7eec8a6d1d71"
+    },
+    {
+      "imagen": "../img/accesorios-4.jpg",
+      "categoria": "accesorios",
+      "nombre": "Plato para Alimentos",
+      "precio": "$ 120.00",
+      "id": "b0cc67e1-2542-4efc-848e-94f2cc733937"
+    },
+    {
+      "imagen": "../img/accesorios-6.jpg",
+      "categoria": "accesorios",
+      "nombre": "Collar para Gato",
+      "precio": "$ 70.00",
+      "id": "732f493a-7da3-4ee2-bd73-767cf18c4641"
+    },
+    {
+      "imagen": "../img/alimento/alimento01.jpg",
+      "categoria": "alimentos",
+      "nombre": "PAL Perro",
+      "precio": "$ 400.00",
+      "id": "74754dd3-eead-43f8-81c8-3b5263d8302a"
+    },
+    {
+      "imagen": "../img/otros/otros01.png",
+      "categoria": "otros",
+      "nombre": "Lentes ",
+      "precio": "$ 120.00",
+      "id": "919da871-5716-47f5-9d8f-ef852ed557ea"
+    },
+    {
+      "imagen": "../img/alimento/alimento02.jpg",
+      "categoria": "alimentos",
+      "nombre": "Pal Gato",
+      "precio": "$ 290.00",
+      "id": "94487d02-9d6a-4ade-aefa-a7f2567f05ef"
+    },
+    {
+      "imagen": "../img/otros/otros02.png",
+      "categoria": "otros",
+      "nombre": "Ponchos",
+      "precio": "$ 450.00",
+      "id": "20e9bc06-7431-4bc1-9a4a-934bbc56b26a"
+    },
+    {
+      "imagen": "../img/alimento/alimento03.jpg",
+      "categoria": "alimentos",
+      "nombre": "Dog Chow",
+      "precio": "$ 300.00",
+      "id": "d5675d8c-7b19-4fae-afe9-57dc58816caf"
+    },
+    {
+      "imagen": "../img/otros/otros03.jpg",
+      "categoria": "otros",
+      "nombre": "Sudaderas",
+      "precio": "$ 220.00",
+      "id": "ca0173a5-108e-4f53-8479-af5802e30bf2"
+    },
+    {
+      "imagen": "../img/alimento/alimento04.jpg",
+      "categoria": "alimentos",
+      "nombre": "Beneful",
+      "precio": "$ 600.00",
+      "id": "6bbe97e0-3e78-4ace-a37d-fdf00b239158"
+    },
+    {
+      "imagen": "../img/otros/otros04.png",
+      "categoria": "otros",
+      "nombre": "Gorras",
+      "precio": "$ 90.00",
+      "id": "ba8dcbb1-f458-4c18-8113-59c4cf2223ae"
+    },
+    {
+      "imagen": "../img/otros/otros05.png",
+      "categoria": "otros",
+      "nombre": "Cerveza para Perro",
+      "precio": "$ 75.00",
+      "id": "fc32bdcd-64f3-4edf-a18a-e90cd9365f01"
+    },
+    {
+      "imagen": "../img/alimento/alimento05.jpg",
+      "categoria": "alimentos",
+      "nombre": "Proplan",
+      "precio": "$ 690.00",
+      "id": "8fe070c8-a843-4189-a837-ad797910f1aa"
+    },
+    {
+      "imagen": "../img/alimento/alimento06.jpg",
+      "categoria": "alimentos",
+      "nombre": "Mainstay",
+      "precio": "$ 580.00",
+      "id": "0153c874-ffa6-45c6-94cb-6a8458a8a861"
+    },
+    {
+      "imagen": "../img/otros/otros06.png",
+      "categoria": "otros",
+      "nombre": "Funda de Almohadas",
+      "precio": "$ 70.00",
+      "id": "1bf10db8-b11c-4fe1-8270-64ec0d4ced0c"
+    },
+    {
+      "imagen": "../img/accesorios-5.jpg",
+      "categoria": "accesorios",
+      "nombre": "Correa Piel 3mts",
+      "precio": "$ 190.00",
+      "id": "3dfef4ee-7c12-4e31-a224-b505ab154431"
+    }
+  ]
+}

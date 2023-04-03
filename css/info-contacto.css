@@ -1,0 +1,46 @@
+.info__contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-top: 4em;
+    background: #EAF2FD;
+}
+.logo__contacto{
+    padding-right: 5rem;
+}
+.div__textarea__mensaje{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+@media screen and (max-width:768px) {
+    .info__contacto{
+        padding-left: 2em;
+        padding-right: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo__contacto{
+        display: flex;
+        flex-direction: column; 
+        padding-right: 0;
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+    .info__contacto{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .logo__contacto{
+        display: flex;
+        align-items: center; 
+        padding-right: 0;
+    }
+    
+}

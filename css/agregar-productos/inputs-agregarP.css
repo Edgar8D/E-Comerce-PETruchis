@@ -1,0 +1,32 @@
+.agregar__producto{
+    display: grid;
+    place-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.contenedor__nuevoProducto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 2em;
+}
+.contenedor__nuevoProducto label {
+    color: rgb(125, 180, 216);
+}
+.titulo{
+    padding-bottom: 1em;
+    font-size: 2em;
+    font-family: 'Raleway';
+    font-weight: 700;
+    line-height: 2.3481em;
+}
+@media screen and (max-width:768px){
+    .titulo{
+        font-size: 1.375rem;
+        padding-bottom: 0;
+    }
+    .agregar__producto{
+        padding-top: 1em;
+        padding-bottom: 0;
+    }
+}

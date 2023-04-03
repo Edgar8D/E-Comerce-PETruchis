@@ -1,0 +1,16 @@
+.banner__contenido{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+@media screen and (max-width:768px) {
+    .banner__contenido{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}

@@ -1,0 +1,30 @@
+.boton__editar{
+    font-family: 'Raleway';
+
+    border: none;
+    cursor: pointer;
+
+    display: inline-block;
+    background-color: #7ffafa;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
+    color: #555555;
+    font-size: 0.96rem;
+
+}
+.boton__eliminar{
+    width: 5rem;
+    height: 2rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    border-radius: 5px;
+    background: #db7b78;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
+}

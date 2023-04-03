@@ -1,0 +1,136 @@
+const listaProductos = () => fetch("http://localhost:3000/producto").then((respuesta) => respuesta.json());
+//funcion que comunica con el servidor, recibe la respuesta y genera un json
+
+const crearProducto = (imagen, categoria, nombre, precio) =>{
+    return fetch("http://localhost:3000/producto", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        //estructura que agrega una nuva seccion a nuestro archivo db.json
+        body: JSON.stringify({imagen, categoria, nombre, precio, id: uuid.v4() }), //JSON.stringify: cambia el contenido a texto en el archivo db.json
+    });
+};
+
+const eliminarProducto = (id) => {
+    return fetch(`http://localhost:3000/producto/${id}`, {
+    method: "DELETE",
+    });
+};
+const detalleProducto = (id) => {
+    return fetch(`http://localhost:3000/producto/${id}`).then( (respuesta) => respuesta.json());
+};
+
+const actualizarProducto = (imagen, categoria, nombre, precio, id) => {
+    return fetch(`http://localhost:3000/producto/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+            body: JSON.stringify({imagen, categoria, nombre, precio}),
+        }) 
+        .then((respuesta) => console.log(respuesta))
+        .catch((err) => console.log(err))
+    
+}
+export const productosServices ={
+    listaProductos,
+    crearProducto,
+    eliminarProducto,
+    detalleProducto,
+    actualizarProducto,
+};
+
+import { productosServices } from "../service/productos-services.js"
+
+const nuevoProducto = (nombre, imagen, precio, id) =>{
+    const card = document.createElement("div")
+    const contenido = `                   
+    <div class="producto__contenido">
+    <img src="${imagen}" alt="accesorio IMG" class="contenido__img">
+    <ul>
+        <li class="producto__descripcion"><h3 class="descripcion">${nombre}</h3></li>
+        <li class="producto__subDesctipcion"><p class="subDesctipcion">${precio}</p></li>
+        <li class="producto__subDesctipcion"><a class="link__producto" href="${id}">Ver Producto</a></li>
+    </ul>
+    <a href="../screens/editar-producto.html?id=${id}" class="boton__editar">Editar</a>
+    <button class="boton__eliminar" id="${id}">Eliminar</button>                                     
+    </div>`
+    card.innerHTML = contenido 
+    const btn = card.querySelector("button");
+    btn.addEventListener("click", () => {
+        const id = btn.id
+        productosServices.eliminarProducto(id).then(respuesta =>{
+        console.log(respuesta)
+        }).catch((err) => alert("ocurrio un error 600"))
+        
+    })
+    //card.dataset.id = id
+    return card 
+}
+const table = document.querySelector("[data-todosAccesorios]");
+
+productosServices.listaProductos().then((data) => {
+    data.forEach(({nombre, imagen, precio, id}) => {
+        const nuevalinea = nuevoProducto(nombre, imagen, precio, id);
+         table.appendChild(nuevalinea)
+     });
+}).catch((error) => alert("Ocurrio un Error 700"));
+
+import { productosServices } from "../service/productos-services.js";
+
+const formulario = document.querySelector("[data-form]")
+
+formulario.addEventListener("submit", (evento)=>{
+    evento.preventDefault();
+    const imagen = document.querySelector("[data-url").value
+    const categoria = document.querySelector("[data-categoria]").value
+    const nombre = document.querySelector("[data-nombre]").value
+    const precio = document.querySelector("[data-precio]").value
+   
+    productosServices
+        .crearProducto(imagen,categoria,nombre,precio)
+        .then(() => {
+        window.location.href = "/screens/productos-administrador.html";
+    }).catch((err) => console.log(err));
+});
+import { productosServices } from "../service/productos-services.js";
+
+const formulario2 = document.querySelector("[data-form]")
+
+const obtenerInformacio = () => {
+    const url = new URL(window.location);
+    const id = url.searchParams.get("id");
+
+    if(id === null){
+        window.location.href="/screens"
+
+    }
+    const imagen = document.querySelector("[data-url");
+    const categoria = document.querySelector("[data-categoria]");
+    const nombre = document.querySelector("[data-nombre]");
+    const precio = document.querySelector("[data-precio]");
+
+    productosServices.detalleProducto(id).then((perfil) => {
+        imagen.value = perfil.imagen
+        categoria.value = perfil.categoria
+        nombre.value = perfil.nombre
+        precio.value = perfil.precio
+    });
+};
+
+obtenerInformacio();
+
+formulario2.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+    const url = new URL(window.location);
+    const id = url.searchParams.get("id");
+
+    const imagen = document.querySelector("[data-url").velue;
+    const categoria = document.querySelector("[data-categoria]").value;
+    const nombre = document.querySelector("[data-nombre]").value;
+    const precio = document.querySelector("[data-precio]").value;
+
+    console.log(evento);
+    productosServices.actualizarProducto(imagen, categoria, nombre, precio, id);
+})

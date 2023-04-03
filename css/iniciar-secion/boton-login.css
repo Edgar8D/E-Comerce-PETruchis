@@ -1,0 +1,18 @@
+.boton__entrar{
+    height: 3.875rem;
+    width: 26.4375rem;
+    font-family: 'Raleway';
+    background: #2A7AE4;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.3125rem;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    .boton__entrar{
+        height: 3em;
+        width: 6.8125em; 
+    }
+}

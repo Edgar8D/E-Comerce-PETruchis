@@ -1,0 +1,22 @@
+.logo{
+    width: 9.375em;
+}
+.busqueda{
+    padding-right: 15%;
+}
+
+@media screen and (max-width:768px) {
+       .logo{
+        width: 6.25em;
+       }
+}
+@media screen and (max-width:480px) {
+    .logo{
+     width: 4.375em;
+    }
+}
+@media screen and (max-width:950px) {
+    .busqueda{
+       padding-right: 0;
+    }
+}

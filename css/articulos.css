@@ -1,0 +1,58 @@
+.titulo__productos{
+    font-family: 'Play', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.375rem;
+}
+.vertodo{
+    font-family: 'Raleway';
+    color: #2A7AE4;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1875rem;
+}
+.articulos{
+    padding-left: 6em;
+    padding-right: 6em;
+}
+.accesorios__galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+    margin: auto;
+
+}
+.top__articulos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+@media screen and (max-width:768px) {
+    .titulo__productos{
+        font-size: 1.375rem;
+    }
+    .articulos{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .quitar {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .vertodo{
+        font-size: 0.875rem;
+    }
+    .articulos{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media screen and (max-width:360px) {
+    .accesorios__contenedor{
+        justify-content: center;
+    }
+}

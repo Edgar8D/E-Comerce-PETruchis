@@ -1,0 +1,55 @@
+.todos__top__articulos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+.accesorios__galeria{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: space-around;
+}
+.agregar__producto{
+    background: #2A7AE4;
+    width: 10.1875em;
+    height: 3.1875em;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 400;    
+    line-height: 1.257em;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+@media screen and (max-width:768px){
+    .agregar__producto{
+        width: 9.375em;
+        height: 2.5em;
+    }
+
+}
+@media screen and (max-width:535px) {
+
+    .todos__top__articulos{
+        justify-content: center;
+    }
+    .contenido__img{
+        width: 8.75em;
+        height: 10.875em;
+    }
+    .articulos{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media screen and (max-width:397px) {
+    .accesorios__galeria{
+        justify-content: center;
+    }
+    .articulos{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}

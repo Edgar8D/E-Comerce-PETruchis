@@ -1,0 +1,53 @@
+.busqueda__input{
+    width: 24.5625rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background: none;
+    background: rgba(253, 211, 248, 0.308);
+    border-radius: 20px;
+    border-color: #e96ec0;
+}
+.login{
+    width: 11.375rem;
+    height: 3.1875rem;
+    color: #2a7ae4;
+    font-size: 1rem;
+    font-weight: 600;
+    border-color: #e96ec0;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width:820px) {
+    .busqueda__input{
+        width: 17rem;
+        height: 2.5em;
+    }
+    .login{
+    width: 10.375rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+   } 
+}
+
+@media screen and (max-width:480px) {
+    .busqueda__input{
+        width: 17em;
+        height: 2.5em;
+        
+    }
+    .login{
+    width: 8.3125rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    } 
+
+}
+
+@media screen and (max-width:670px) {
+    .busqueda__input{
+        display: none;
+    }
+    
+}

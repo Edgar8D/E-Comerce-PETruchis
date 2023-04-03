@@ -1,0 +1,13 @@
+.section_login{
+    display: grid;
+    place-items: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.titulo__login{
+    font-family: 'Raleway';
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: black;
+}

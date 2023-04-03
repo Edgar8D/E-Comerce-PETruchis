@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetRuchis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/contenedor-header.css">
+    <link rel="stylesheet" href="../css/logo-busqueda/logo-img-input.css">
+    <link rel="stylesheet" href="../css/logo-busqueda/input__logo.css">
+    <link rel="stylesheet" href="../css/nav-screens.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/banner/banner-contenedor.css">
+    <link rel="stylesheet" href="../css/banner/banner-contenido.css">
+    <link rel="stylesheet" href="../css/agregar-productos/agregar-producto.css">
+    <link rel="stylesheet" href="../css/agregar-productos/inputs-agregarP.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <header>
+        <section class="logo__contenedor">
+            <img src="../img/logo.png" alt="logo de pagina" class="logo">              
+            <div class="busqueda">
+                <input class="busqueda__input" type="search" placeholder="Buscar Porducto">
+            </div>
+            <div class="nav__screens">
+                <a href="../index.html"><p class="nav__p">HOME</p></a>
+                <a href="./productos.html"><p class="nav__p">Todos los Productos</p></a>
+                <a href="./agregar-productos.html"><p class="nav__p">Agregar Producto</p></a>
+            </div>
+            <div class="boton__login">
+                <button class="login">Menu Administrador</button>
+            </div>
+        </section>               
+    </header>
+    <!--Secciones de articulos y precios-->
+    <main>
+        <section class="agregar__producto">
+            <h2 class="titulo">Editar Productos</h2>
+            <form data-form>
+                <div class="contenedor__nuevoProducto">                                
+                    <label for="url">Coloca URL de imagen deseada</label>
+                    <input class="input__nuevoProducto" type="text" placeholder="Ej: http://urldeimagen.com/imagen" required data-url>
+
+                    <label for="categoria">Categoria</label>
+                    <input class="input__nuevoProducto" id="categoria-producto" type="text" placeholder="Ej: Juguetes" required data-categoria>
+
+                    <label for="nombre">Nombre del producto</label>
+                    <input class="input__nuevoProducto" id="nombre-producto" type="text" placeholder="Ej: Pelota para Perro" required data-nombre>
+
+                    <label for="precio">Precio del Producto</label>
+                    <input class="input__nuevoProducto" id="precio-producto" type="text" placeholder="Ej: $ 99.99" required data-precio>                                                      
+                </div>
+                <button type="submit" class="agregar__producto__boton">Editar Producto</button>  
+            </form>
+        </section>        
+    <footer>
+        <section class="footer">
+            <div class="desarrollado">
+                <p class="texto__footer">Desarrolado por Edgar Gonzalez</p>
+                <p class="texto__footer">2023</p>
+            </div>
+        </section>
+    </footer>
+    <script type="module" src="../controllers/editar-controller.js"></script>
+</body>
+</html>

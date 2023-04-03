@@ -1,0 +1,45 @@
+.input__nuevoProducto{
+    width: 34.9375rem;
+    height: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: 400;
+}
+.boton__agregar{
+    padding-top: 2rem;
+}
+.agregar__producto__boton{
+    width: 35.5rem;
+    height: 3.1875rem;
+    background: #2A7AE4;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Raleway';
+    font-size: 1em;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .input__nuevoProducto{
+        width: 40rem;
+    }
+    .input__nuevoProductoL{
+        width: 40rem;
+
+    }
+    .agregar__producto__boton{
+        width: 40rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .input__nuevoProducto{
+        width: 20.5rem;
+    }
+    .input__nuevoProductoL{
+        width: 20.5rem;
+
+    }
+    .agregar__producto__boton{
+        width: 20.5rem;
+    }
+}

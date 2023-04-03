@@ -1,0 +1,16 @@
+.link__info{
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.1875;
+}
+
+.info li{
+    padding: 0.7em;
+}
+@media screen and (max-width:480px) {
+    .info li{
+        display: flex;
+        justify-content: center;
+    }
+}

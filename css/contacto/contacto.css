@@ -1,0 +1,51 @@
+.contacto{
+    padding-left: 5rem;
+}
+.hable{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+}
+.input__nombre{
+    width: 35.5em;
+    height: 3.5em;
+    border: none;
+    background: #FFFFFF;
+}
+.textarea__mensaje{
+    width: 35.650em;
+    height: 5.5em;
+    border: none;
+    background: #FFFFFF;
+}
+.info__enviar{
+    width: 8.0625em;
+    height: 3.1875em;
+    background: #2A7AE4;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    border: none;   
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .contacto{
+        padding-left: 2em;
+        padding-top: 2em;
+    }
+    .input__nombre{
+        width: 27.125em;
+        height: 3.5em;
+    }
+    .textarea__mensaje{
+        width: 27.125em;
+        height: 5.5em;
+    }
+}
+@media screen and (max-width:480px) {
+    .contacto{
+        padding-left: 0;
+        padding-top: 2em;
+    }
+}
