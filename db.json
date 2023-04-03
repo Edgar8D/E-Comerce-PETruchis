@@ -125,6 +125,13 @@
       "nombre": "Correa Piel 3mts",
       "precio": "$ 190.00",
       "id": "3dfef4ee-7c12-4e31-a224-b505ab154431"
+    },
+    {
+      "imagen": "../img/accesorios-7.jpg",
+      "categoria": "accesorios",
+      "nombre": "Cama para Gato",
+      "precio": "$ 620.00",
+      "id": "1be29566-bae3-4f19-a70b-c220912828ec"
     }
   ]
 }
